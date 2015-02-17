@@ -3,8 +3,6 @@
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
-
-  Author: Fohlen fohlen@einhufer.info
  */
 
 #include "cube.h"
@@ -73,6 +71,10 @@ int main(int argc, char* argv[])
 
 				case 'e': //evaluate
 					execute(argv[i]+2);
+					break;
+					
+				case 'h' : //help
+					printf("Valid options: -f (executes file), -e (evaluates input) \n");
 					break;
 
 				default:
